@@ -2,16 +2,18 @@
 
 :root {
     --background: #02101f;
+    --focused-background: #18313d;
     --text-color: #FFF;
     --shadows: rgba(0, 0, 0, 1);
-    --neon: #5CDB85;
+    --neon: #27DEBF;
 
-    --task-background: #071827;
+    --task-background: #121e2c;
     --light-shadow: rgba(0, 0, 0, 0.5);
   }
 
 *{
     color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
     transition: background-color .5s, box-shadow .5s;
 }
 
@@ -26,7 +28,7 @@ body{
     height: 60px;
     padding: 0;
     margin: 0;
-    background-color: var(--background);
+    background-color: var(--focused-background);
     box-shadow: var(--shadows) 0px 5px 15px;
     overflow: hidden;
 }
@@ -38,7 +40,7 @@ nav{
     height: 59px;
     padding: 0;
     margin: 0;
-    background-color: var(--background); 
+    background-color: var(--focused-background);
     z-index: 1;
     overflow: hidden;
 }
@@ -47,7 +49,7 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--background);
+    background-color: var(--focused-background);
     float: left;
 }
 ul.desktop-nav{

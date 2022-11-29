@@ -1,13 +1,14 @@
 .grid-container{
-    margin: 50px 20vw;  
+    display: grid;
+    grid-template-columns: auto;
+    margin: 50px 50px;
 }
 
 .task-container{
     position: relative;
     display: block;
-    margin: 20px;
+    justify-self: center;
     padding: 1px 1px;
-    left: 0px;
     height: 50px;
     width: 60vw;
     border-radius: 2px;    
@@ -18,110 +19,14 @@
 
     transition: all .3s;
 }
-
-.task-container.hover:hover{
-    left: -5px;
-    width: calc(60vw + 10px);
-    box-shadow: var(--light-shadow) 0px 22px 70px 4px;}
-
-.task-container span.title {
-    position: relative;
-    display: block;
-    padding: 13px 0px;
-    top: 0px;
-    left: 0px;
-    cursor: pointer;
-    margin: 0px;
+.task-container h1{
     text-align: center;
-    text-decoration: none;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 2px;
-    font-size: 20px;
-    z-index: 1;
-    background-color: var(--background);
-
-    transition: all .3s;
-
+    padding: 0;
+    margin: .2em;
+    font-size: 2em;
+    font-weight: unset;
 }
 
-.task-container a {
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-/* animations */
-.task-container::before{
-    content: "";
-    opacity: 0;
-    position: absolute;
-    width: 3px;
-    height: 60px;
-    top: 0;
-    left: 0;
-    transform: rotate(180deg);
-    background: linear-gradient(0deg, var(--neon), transparent);
-    animation: task-neon-spinning 4s linear infinite;
-}
-.task-container::after{
-    content: "";
-    opacity: 0;
-    position: absolute;
-    width: 3px;
-    height: 60px;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg, var(--neon), transparent);
-    animation: task-neon-spinning 4s linear infinite;
-    animation-delay: -2s;
-}
-
-.task-container:hover::before{
-    opacity: 1;
-}
-.task-container:hover::after{
-    opacity: 1;
-}
-
-
-@keyframes task-neon-spinning {
-    0%{
-        transform: rotate(270deg);
-        left: -10px;
-        top: -30px;
-    }
-    45.7%{
-        transform: rotate(270deg);
-        left: calc(100% - 2px);
-        top: -30px;
-    }
-    45.701%{
-        transform: rotate(00deg);
-    }
-    50%{
-        transform: rotate(0deg);
-        left: calc(100% - 2px);
-        top: calc(100% - 30px);
-    }
-    50.001%{
-        transform: rotate(90deg);
-    }
-    95.7%{
-        transform: rotate(90deg);
-        left: -1px;
-        top: calc(100% - 30px);
-    }
-    95.701%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(180deg);
-        left: -1px;
-        top: -30px;
-    }
-    
+.task-container.show{
+    width: 90vw;
 }
