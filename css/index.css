@@ -1,0 +1,29 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 100px;
+    padding: 10px;
+}
+
+main > div:nth-child(1) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: 0px 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+main > div:nth-child(2) {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin: 0px 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+main > div:nth-child(2) > img {
+    height: 100%;
+    width: 300px;
+}
