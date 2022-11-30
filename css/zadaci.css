@@ -8,6 +8,7 @@
     position: relative;
     display: block;
     justify-self: center;
+    margin-bottom: 1em;
     padding: 1px 1px;
     height: 50px;
     width: 60vw;
@@ -26,7 +27,47 @@
     font-size: 2em;
     font-weight: unset;
 }
-
+.task-container:hover{
+    transform: scale(1.1);
+}
 .task-container.show{
     width: 90vw;
+}
+.task-container.show:hover{
+    transform: scale(1);
+}
+
+.hidden{
+    padding: 0 5em;
+    padding-top: 3em;
+    font-size: 1.2em;
+}
+
+/* custom elemnti */
+/*
+<Zadatak1>
+<Zadatak2>
+<Rjes>
+<ul> {
+    brojevi
+    tocke
+}
+<code>
+*/
+Zadatak1{
+
+}
+Zadatak2{
+    font-size: 1.5em;
+    color: var(--task-text);
+    line-height: 3;
+}
+Rjes{
+    font-size: 1.3em;
+    padding-left: 200px;
+    white-space:unset
+}
+Zadatak2::after, Zadatak1::after, Rjes::after{
+    content: "\a";
+    white-space: pre;
 }
