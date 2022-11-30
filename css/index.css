@@ -1,7 +1,7 @@
 main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin: 30px;
+    margin: 140px;
     padding: 10px;
     container-type: inline-size;
 }

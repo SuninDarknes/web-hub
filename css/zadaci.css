@@ -1,7 +1,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: auto;
-    margin: 50px 50px;
+    margin: 120px 50px 0px 50px;
 }
 
 .task-container{
@@ -17,8 +17,7 @@
     box-shadow: var(--light-shadow) 0px 5px 15px;
     cursor: pointer;
     overflow: hidden;
-
-    transition: all .3s;
+    transition:  width .25s, height 1.5s .25s, transform .4s;
 }
 .task-container h1{
     text-align: center;
@@ -40,7 +39,7 @@
 .hidden{
     padding: 0 5em;
     padding-top: 3em;
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
 
 /* custom elemnti */
@@ -53,21 +52,36 @@
     tocke
 }
 <code>
+<img-container>
 */
 Zadatak1{
 
 }
 Zadatak2{
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: var(--task-text);
     line-height: 3;
 }
 Rjes{
-    font-size: 1.3em;
-    padding-left: 200px;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    width: 100px;
+    height: 100px;
     white-space:unset
 }
 Zadatak2::after, Zadatak1::after, Rjes::after{
     content: "\a";
     white-space: pre;
 }
+
+.task-container img{
+    max-width: 100%;
+}
+.task-container img:hover{
+    width: 100%;
+}
+img-container::before, img-container::after {
+    content: "\a";
+    white-space: pre;
+}
+
