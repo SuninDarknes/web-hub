@@ -75,7 +75,7 @@ Zadatak2::after, Zadatak1::after, Rjes::after{
 }
 
 .task-container img{
-    max-width: 100%;
+    width: 1;
 }
 .task-container img:hover{
     width: 100%;
