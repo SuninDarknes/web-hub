@@ -25,6 +25,7 @@
     margin: .2em;
     font-size: 2em;
     font-weight: unset;
+    transition: all .5s .2s;
 }
 .task-container:hover{
     transform: scale(1.1);
@@ -34,6 +35,56 @@
 }
 .task-container.show:hover{
     transform: scale(1);
+}
+.task-container.show h1{
+    font-size: 4em;
+}
+.task-container .close{
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 0;
+    height: 0;
+    background-color: var(--text-color);
+    z-index: 50;
+    border-radius: 10px;
+    transform: rotate(0);
+    transition: all .7s .2s;
+}
+.task-container .close::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: var(--text-color);
+    z-index: 50;
+    border-radius: 10px;
+    transform: rotate(0);
+    transition: all .7s .2s;
+}
+
+.task-container.show .close{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    width: 70px;
+    height: 7px;
+    background-color: var(--text-color);
+    z-index: 50;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+.task-container.show .close::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 7px;
+    background-color: var(--text-color);
+    z-index: 50;
+    border-radius: 10px;
+    transform: rotate(90deg);
 }
 
 .hidden{
@@ -58,9 +109,10 @@ Zadatak1{
 
 }
 Zadatak2{
+    display: block;
     font-size: 1.2em;
     color: var(--task-text);
-    line-height: 3;
+    margin: 50px 0;
 }
 Rjes{
     inline-size: 150px;
@@ -85,3 +137,16 @@ img-container::before, img-container::after {
     white-space: pre;
 }
 
+.task-container a {
+    color: inherit;
+    filter: brightness(140%);
+    transition: all .2s;
+}
+.task-container a:hover{
+    filter: brightness(250%);
+}
+
+.task-container iframe {
+    width: 100%;
+    height: 800px;
+}
