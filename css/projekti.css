@@ -248,11 +248,10 @@ body {
 
 .github{
   position: absolute;
-  top: 50vh;
+  top: 150vh;
   left: 50vw;
   text-decoration: none;
-  animation: anim-buttn 5s 1s cubic-bezier(.75,.17,.38,1.27);
-
+  animation: anim-buttn 5s 1s cubic-bezier(.75,.17,.38,1.27) forwards;
   
 }
 .github > img{
@@ -262,6 +261,7 @@ body {
   top: -12.5vw;
   left: -12.5vw;
   animation: pulse-buttn 1s 6s infinite cubic-bezier(.75,.17,.38,1.27);
+  filter:drop-shadow(0.5vw .7vw 0px gray);
 }
 
 .github > p{
@@ -270,7 +270,6 @@ body {
   font-size: 5vw;
   top: -17vw;
   left: -8.2vw;
-  
   animation: pulse-buttn 1s 6s infinite cubic-bezier(.75,.17,.38,1.27);
 }
 
