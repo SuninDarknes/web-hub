@@ -1,0 +1,48 @@
+<h2>PRIPREMA ZA VJEŽBU</h2>
+<Zadatak1>
+	<Zadatak2>1. Što uključuje multimedija na web-u?</Zadatak2>
+	<Rjes>Multimediju na web-u uključuje sliku, zvuk, videozapis, glazbu, animcije…</Rjes>
+	<Zadatak2>2. U kojem se obliku spremaju multimedijalni elementi? Što određuje ekstenzija? Nabrojite nekoliko mogućih ekstenzija (proširenja).</Zadatak2>
+	<Rjes>Multimedijalni elementi se spremaju u obliku datoteka, a ekstenzija određuje vrstu datoteke i vrstu multimedijskog sadržaja koji je pohranje u datoteci. Na primjer: ekstenzije za video mogu biti .mp4, .wmv, .webm, za sliku mogu biti .jpeg, .jpg, .pmg, za audio zapis .mp3, .wav… </Rjes>
+	<Zadatak2>3. Nabrojite uobičajene formate za video datoteke. Koje formate podržava HTML? Koji format preporuča YouTube?</Zadatak2>
+	<Rjes>Uobičajeni formati za video datoteke su MPEG, AVI, WMV, QuickTime, RealVideo, Flash, Ogg, WebM, MPEG-4 ili MP4, a HTML podržava MP4, WebM i Ogg. YouTube preporuča baš MP4 koji je jedan od podržanih oblika od strane HTML-a. </Rjes>
+	<Zadatak2>4. Nabrojite uobičajene formate za audio datoteke. Koja tri formata su podržana HTML standardom? Koji je najbolji format za kompresiranu snimljenu glazbu?</Zadatak2>
+	<Rjes>Uobičajeni formati za audio datoteke su MIDI, RealAudio, WMA, AAC, WAV, Ogg, MP3, MP4, a HTML podržava MP3, WAV i Ogg formate. Najbolji format za kompresiranu glazbu je MP3. </Rjes>
+	<Zadatak2>5. Što su plug-in-ovi? Nabrojite najmanje pet različitih zadataka plug-in-ova?</Zadatak2>
+	<Rjes>Plug-in-ovi su nekakvi dodaci i najčešće se spominju kod web preglednika kao njihova proširenja za dodatne mogućnosti. Zadatci plug-in-ova su: pokretanje Java applets-a, pokretanje Microsoft ActiveX controls-a, prikazivanje Flash filmova, prikazivanje mapa te skeniranje virusa. </Rjes>
+	<Zadatak2>6. Koje vrste objekata (plug-in tipa) više nisu podržane, dostupne ili su isključene u preglednicima?</Zadatak2>
+	<Rjes>Više nisu podržani Java Applets, ActiveX controls i ShockWave Flash.</Rjes>
+</Zadatak1>
+<h2>IZVOĐENJE VJEŽBE:</h2>
+<h2>1. HTML Video i Audio</h2>undefinedundefined</Zadatak1>undefinedundefined<Zadatak2>Koji HTML element koristimo za prikaz videa na web stranici?</Zadatak2> Koristimo element &lt;video&gt;. undefinedundefined<Zadatak2>A. Što dodaje atribut controls?</Zadatak2> Atribut controls dodaje audio/video kontrole. undefinedundefined<Zadatak2>B. Zbog čega je dobro uvijek koristiti attribute width i height? Što se može događati ako nisu postavljeni?</Zadatak2> Dobro ih je koristiti jer se tako određuje fiksna veličina objekta, jer ako se ne definiraju onda bi moglo doći do preklapanja elemenata. undefinedundefined<Zadatak2>C. Kako i zašto se koristi element source? Kako će odabir napraviti preglednik?</Zadatak2> Element &lt;source&gt; koristimo za postavljanje alternativnih izvora datoteka koje preglednik može odabrati. Preglednik će odabrati prvi prepoznati format. undefinedundefined<Zadatak2>D. U kojem će se slučaju ispisati navedeni tekst?</Zadatak2>undefinedundefined<Zadatak2>E. Kako se prikazani video sadržaj može pokrenuti automatski? Na kojim uređajima neće raditi?</Zadatak2> Prikazani video sadržaj se automatski pokreće postavljanjem atributa “autoplay” i on neće raditi mobilnim uređajima kao iPad ili iPhone. undefinedundefined<Zadatak2>F. Koji HTML element koristimo za uključivanje audio datoteka u web stranicu?</Zadatak2> Koristimo element &lt;audio&gt;. undefinedundefined</Zadatak1>undefinedundefined<h2>2. HTML Plug-ins i YouTube video:</h2>undefinedundefined<Zadatak1>undefinedundefined<Zadatak2>A. Što definira i za što se koristi element &lt;object&gt;? Navedite primjere upotrebe sa kodom.</Zadatak2>undefinedundefined<Rjes>Element &lt;object&gt; se koristi za definiranje ugrađenog objekta u HTML. <br> Primjer: <br>&lt;object width=”100%” height=”500px” data=”snippet.html”&gt;&lt;/object&gt; <br>(dodavanje HTML datoteke) </Rjes>
+	<Zadatak2>B. Za što se koristi element &lt;embed&gt;? Navedite primjer koda</Zadatak2>
+	<Rjes>Element &lt;embed&gt; se koristi za isto za što i element &lt;object&gt;, ali on nije više podržan u HTML-u, tj. otkako je izašao HTML5. <br> Primjer: &lt;embed src=”audi.jpeg”&gt; </Rjes>
+	<Zadatak2>C. Za pokretanje videa na mrežnoj stranici u HTML kodu može se koristiti YouTube video ID. Navedite primjer YouTube video ID-a.</Zadatak2>
+	<Rjes> Primjer: YouTube video ID-a: tgbNymZ7vqY </Rjes>
+	<Zadatak2>D. Nabrojite šest koraka potrebnih za pokretanje YouTube videa na mrežnoj stranici. (https://www.w3schools.com/html/html_youtube.asp)</Zadatak2>
+	<Rjes>&lt;iframe width=”420″ height=”315″ <br> src=”https://www.youtube.com/embed/tgbNymZ7vqY”&gt; <br> &lt;/iframe&gt; <br>
+		<br> 1. Postaviti video na Youtube. <br> 2. Pronaći video ID. <br> 3. Definirati &lt;iframe&gt; elemnt u HTML-u. <br> 4. Definirati &lt;src&gt; atribut. <br> 5. Definirati veličinu prozora u kojem se prikazuje video. <br> 6. Definriati ostale parametre. <br>
+	</Rjes>
+	<Zadatak2>E. Na koji se način može uključiti stišani autoplay kod videa? Navedite primjer koda</Zadatak2>
+	<Rjes>Možemo ga uključiti pomoću atrubuta &lt;mute&gt; i &lt;autoplay&gt; </Zadatak2> Primjer: &lt;iframe width=”420″ height=”315″ src=”https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1″&gt; &lt;/iframe&gt; </Rjes>
+	<Zadatak2>F. Kako se piše i koristi YouTube playlist?</Zadatak2>
+	<Rjes>Piše se tako da unesemo poveznice na svaki video i odvojimo ih zarezom. </Rjes>
+	<Zadatak2>G. U kodu: <br> &lt;iframe width=”420″ height=”315″ src=”https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1″&gt; &lt;/iframe&gt; <br> Što znači loop=1? Koja je podrazumijevana vrijednost i što ona znači? </Zadatak2>
+	<Rjes>loop=1 je atribut koji postavlja reprodukciju videozapisa u beskonačnost, tj. video će se pokretat iznova i iznova. Podrazumijevana vrijednost je 0 (video se pokreće samo jednom), ako se ne definira drugačije. ​ </Rjes>
+	<Zadatak2>H. Kako se ispisuju kontrole uz YouTube video sadržaj?</Zadatak2> ​ <Rjes>Ispisuju se tako što u URL stavimo controls=0. Primjer: src=https://www.youtube.com/embed/tgbNymZ7vqY?controls=0 </Rjes>
+</Zadatak1>
+
+<Zadatak1>
+    <Zadatak2>3. Izrada mrežne stranice:</Zadatak2>
+    <Rjes>A. Napravite mrežnu stranicu o pticama. Za prikaz stranice pripremite što više medijskih elemenata i spremite ih u podmape osnovne mape vaše stranice: slike, zvukovi, video sadržaji. Sve slike i video sadržaji trebaju se prikazati u istoj veličini (otprilike četvrtinu širine stranice) bez izobličenja. Uz slike  trebaju biti naslovi, a uz video sadržaje kontrole. Odaberite tri vrste ptica. Na početku stranice treba biti  lista sa internim poveznicama: ptica1, ptica 2, ptica 3. Klikom na poveznicu prebacuje se na dio stranice     koji govori o toj ptici. Sadržaji vezani uz svaku pticu trebaju biti podijeljeni na: 1. kratki uvodni tekst (osnovne informacije, veličina, stanište, ishrana i td.), 2. slike ptice (najmanje dvije), 3. zvučni zapis pjeva te ptice, 4. video materijali o toj ptici. Obavezno koristite i YouTube video. Na kraju stranice potrebno je napraviti manji obrazac sa prostorom za unosom osnovnih osobnih podataka i podatka o tome o kojoj bi korisnik ptici i koju vrstu materijala o toj ptici (tekst, slike, zvuk, video) molio da mu se dostavi.
+    </Rjes>
+    <br>
+    <Rjes>
+		<a href="/files/lv10/3.html" target="_blank">Link na stranicu</a>
+		<br>
+		<a href="/files/lv10/3_code.html" target="_blank">Kod od stranice</a>
+		<br>
+		<br>
+		<iframe src="/files/lv10/3.html" title="Stranica"></iframe>
+	</Rjes>
+</Zadatak1>

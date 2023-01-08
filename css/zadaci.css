@@ -149,4 +149,5 @@ img-container::before, img-container::after {
 .task-container iframe {
     width: 100%;
     height: 800px;
+    border: 0;
 }

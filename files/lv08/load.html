@@ -1,0 +1,46 @@
+<h2>PRIPREMA ZA VJEŽBU</h2>
+<Zadatak1>
+	<Rjes>HTML obrazac koristi se za prikupljanje korisničkih ulaznih podataka. Ti se podaci obično šalju poslužitelju na obradu. Odgovorite na pitanja pisano u bilježnicu:</Rjes>
+	<Zadatak2>1. Čemu služe obrasci na mrežnim stranicama?</Zadatak2>
+	<Rjes>Obrasci nam služe prilikom unos podataka od strane korisnika te se ti podaci šalju na server da se obrade. </Rjes>
+	<Zadatak2>2. Navedite primjere za najmanje pet vrsta podataka koji se mogu unositi na mrežnim stranicama.</Zadatak2>
+	<Rjes>Brojevi (cijeli, decimalni), riječ (ime, prezime…), znak (spol(M,Ž)), datum, link, email...</Rjes>
+	<Zadatak2>3.Navedite najmanje dva primjera za osjetljivost i moguće zloporabe podataka koji se unose na mrežnim stranicama.</Zadatak2>
+	<Rjes>Hakerski napadi, krađa identiteta i novaca.</Rjes>
+</Zadatak1>
+<h2>IZVOĐENJE VJEŽBE</h2>
+<h2>1. OBRASCI</h2>
+<Zadatak1>
+	<Zadatak2>A. Navedite najmanje pet primjera sa objašnjenjima za vrijednost atributa type (pomoć: <a href="https://www.w3schools.com/html/html_forms.asp">https://www.w3schools.com/html/html_forms.asp </a>). </Zadatak2>
+	<Rjes> “text” – jedna linija u koju se upisuje tekst (najčešće jedna riječ) <br> “radio” – gumb(i) za odabir jednog od ponuđenih odgovora <br> “checkbox” – odabir niti jednog ili više ponuđenih odgovora <br> “submit” – prikazuje gumb za potvrdu <br> “button” – prikazuje gumb koji je moguće pritisnuti <br>
+	</Rjes>
+	<Zadatak2>B. Napišite HTML kod za obrazac koji će od korisnika tražiti da upiše ime i prezime u dva odvojena tekstualna polja. Uočite važnost međusobne povezanosti oznake “label” sa elementom “input” za “for”, “id” i “name”. Kolika je podrazumijevana dužina tekstualnog polja?</Zadatak2>
+	<Rjes> Podrazumijeva se dužina od 20 znakova. <br>
+		<br> &lt;form&gt; <br> &lt;input type="radio" id ="male" name="spol" value="musko"&gt; <br> &lt;label for ="musko"&gt;Muško&lt;/label&gt;&lt;br&gt; &lt;input type="radio" id ="female" name="spol" value="žensko"&gt; <br> &lt;label for ="žensko"&gt;Žensko&lt;/label&gt;&lt;br&gt; <br> &lt;/form&gt; <br>
+		<br> Radio tipke dozvoljavaju korisniku da bira JEDAN iz ograničenog broja izbora. <br>
+		<br> &lt;form&gt; &lt;input type ="checkbox" id="sestra" name="sestra" value="Sestra"&gt; <br> &lt;label for ="sestra" &gt; IMAM SESTRU &lt;/label&gt; <br> &lt;br&gt; <br> &lt;input type ="checkbox" id = "brat" name = "brat" value = "Brat"&gt; <br> &lt;label for ="brat" &gt; IMAM BRATA &lt;/label&gt; &lt;br&gt; <br>
+		<br> &lt;input type=”submit”&gt; definira tipku za slanje podataka iz obrasca tzv. form-handler-u, tipično datoteci na poslužitelju koja sadrži skriptu za procesiranje ulaznih podataka. Form-handler se specificira u atributu action obrasca. <br> Uočite kako svako ulazno polje treba imati atribut name da bi ga se moglo poslati. Ako je taj atribut izostavljen, vrijednost ulaznog polja neće uopće biti poslana. <br>
+	</Rjes>
+	<Zadatak2>6. Kreiranje obrasca </Zadatak2>
+	<Rjes>
+		<a href="/files/lv08/6.html" target="_blank">Link na stranicu</a>
+		<br>
+		<a href="/files/lv08/6_code.html" target="_blank">Kod od stranice</a>
+		<br>
+		<br>
+		<iframe src="/files/lv08/6.html" title="Stranica"></iframe>
+	</Rjes>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<Rjes>
+		<a href="/files/lv08/7.html" target="_blank">Link na stranicu</a>
+		<br>
+		<a href="/files/lv08/7_code.html" target="_blank">Kod od stranice</a>
+		<br>
+		<br>
+		<iframe src="/files/lv08/7.html" title="Stranica"></iframe>
+	</Rjes>
+</Zadatak1>

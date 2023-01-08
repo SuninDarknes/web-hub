@@ -1,3 +1,18 @@
+
+$(function(){
+  $(".z1").load("files/lv01/load.html"); 
+  $(".z2").load("files/lv02/load.html"); 
+  $(".z3").load("files/lv03/load.html"); 
+  $(".z4").load("files/lv04/load.html"); 
+  $(".z5").load("files/lv05/load.html"); 
+  $(".z6").load("files/lv06/load.html"); 
+  $(".z7").load("files/lv07/load.html");
+  $(".z8").load("files/lv08/load.html"); 
+  $(".z9").load("files/lv09/load.html"); 
+  $(".z10").load("files/lv10/load.html"); 
+  $(".z11").load("files/lv11/load.html");
+});
+
 containers = document.querySelectorAll(".task-container")
 containers.forEach(element => {
   element.addEventListener("click", (e) =>{

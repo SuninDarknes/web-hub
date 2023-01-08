@@ -1,0 +1,58 @@
+<h2>PRIPREMA ZA VJEŽBU</h2>
+<Zadatak1>
+	<Zadatak2>1.Što su meta podaci?</Zadatak2>
+	<Rjes>Meta podaci se koriste za optimizaciju mrežne stranice. Meta podaci su podaci o podacima.</Rjes>
+	<Zadatak2>2. Što opisujemo putanjama datoteka kod izrade web sjedišta?</Zadatak2>
+	<Rjes>Putanja datoteke predstavlja put kojim će se link povezati sa drugim stranicama, slikama, i raznim drugim datotekama. </Zadatak2>
+</Zadatak1>
+<h2>IZVOĐENJE VJEŽBE</h2>
+<h2>1. META PODACI, ELEMENT META</h2>
+<Zadatak1>
+	<Zadatak2>A. Što definira &lt;meta&gt; element?</Zadatak2>
+	<Rjes> meta element definira meta podatke.</Rjes>
+	<Zadatak2>B. Gdje se piše element &lt;meta&gt;?</Zadatak2>
+	<Rjes> Element meta se piše unutar elementa head.</Rjes>
+	<Zadatak2>C. Što se obično navodi, odnosno specificira pomoću elementa &lt;meta&gt;?</Zadatak2>
+	<Rjes>meta elementi se koriste za određivanje skupa znakova, opisa stranice, ključnih riječi, autora dokumenta i postavki okvira za prikaz.</Rjes>
+	<Zadatak2>D. Kome su obično namijenjeni meta podaci?</Zadatak2>
+	<Rjes> Meta podaci su obično namijenjeni preglednicima (kako prikazati sadržaj ili ponovno učitati stranicu), tražilicama (ključne riječi) i drugim web uslugama.</Rjes>
+	<Zadatak2>E. Napišite primjer koda kojim se definiraju ključne riječi za tražilice. (pomoć: <a href="https://www.w3schools.com/tags/tag_meta.asp ">https://www.w3schools.com/tags/tag_meta.asp </a>) </Zadatak2>
+	<Rjes> &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</Rjes>
+	<Zadatak2>F. Napišite primjer koda kojim se definira opis mrežne stranice.</Zadatak2>
+	<Rjes> &lt;meta name="description" content="Free Web tutorials"></Rjes>
+	<Zadatak2>G. Napišite primjer koda kojim se definira autor stranice.</Zadatak2>
+	<Rjes> &lt;meta name="author" content="John Doe"></Rjes>
+	<Zadatak2>H. Napišite primjer koda kojim se dokument osvježava svakih 60 sekundi.Što označava pojam viewport?</Zadatak2>
+	<Rjes> &lt;meta http-equiv="refresh" content="60″> Viewport je korisnikovo vidljivo područje web stranice i razlikuje se ovisno o uređaju</Rjes>
+	<Zadatak2>I. Napišite primjer koda kojim se postavlja viewport da ispravno prikazuje mrežno sjedište na različim uređajima. Objasnite kod.</Zadatak2>
+	<Rjes> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0″> – Ovo pregledniku daje upute o tome kako kontrolirati dimenzije i skaliranje stranice. Dio width=device-width postavlja širinu stranice tako da prati širinu zaslona uređaja (koja će varirati ovisno o uređaju). Dio initial-scale=1.0 postavlja početnu razinu zumiranja kada preglednik prvi put učita stranicu. </Rjes>
+</Zadatak1>
+<Zadatak1>
+	<h2>2. HTML PUTANJE DATOTEKA</h2>
+	<Zadatak2>A. Napišite redak HTML koda kojim opisujemo da se slika naziva ljeto.jpg nalazi u istoj mapi kao i trenutna stranica.</Zadatak2>
+	<Rjes> &lt;img src=“ljeto.jpg“></Rjes>
+	<Zadatak2>B. Napišite redak HTML koda kojim opisujemo da se slika naziva zima.jpg nalazi u podmapi images trenutne mape.</Zadatak2>
+	<Rjes> &lt;img src=“images/zima.jpg“></Rjes>
+	<Zadatak2> C. Napišite redak HTML koda kojim opisujemo da se slika naziva jesen.jpg nalazi u podmapi images u korijenskoj mapi trenutnog mrežnog sjedišta.</Zadatak2>
+	<Rjes> &lt;img src=“/images/zima.jpg“></Rjes>
+	<Zadatak2>D. Napišite redak HTML koda kojim opisujemo da se slika naziva proljece.jpg nalazi u mapi koja je u strukturi mapa za jednu razinu viša od trenutne mape.</Zadatak2>
+	<Rjes> &lt;img src="../proljece.jpg"></Rjes>
+	<Zadatak2>E. Što se podrazumijeva pod apsolutnom putanjom? Navedite primjer apsolutne putanje.</Zadatak2>
+	<Rjes> Apsolutna putanja je puni URL link do datoteke. Primjer: &lt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"></Rjes>
+	<Zadatak2>F. Što se podrazumijeva pod relativnom putanjom? Navedite primjer.</Zadatak2>
+	<Rjes> Relativna putanja ukazuje na datoteku u odnosu na trenutnu stranicu. Primjer: &lt;img src="/images/picture.jpg" alt="Mountain"></Rjes>
+	<Zadatak2>G. Kakve se putanje preporuča koristiti? Zašto?</Zadatak2>
+	<Rjes> Najbolja je praksa koristiti relativne putanje datoteka. Kada koristite relativne putanje datoteka, vaše web stranice neće biti vezane na vaš trenutni osnovni URL. Sve veze će raditi na vašem računalu, kao i na vašoj trenutnoj javnoj domeni i vašim budućim javnim domenama. </Rjes>
+</Zadatak1>
+<Zadatak1>
+	<h2>3. izrada stranice</h2>
+	<Rjes>
+		<a href="/files/lv09/3.html" target="_blank">Link na stranicu</a>
+		<br>
+		<a href="/files/lv09/3_code.html" target="_blank">Kod od stranice</a>
+		<br>
+		<br>
+		<iframe src="/files/lv09/3.html" title="Stranica"></iframe>
+	</Rjes>
+</Zadatak1>
+
