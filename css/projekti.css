@@ -10,14 +10,15 @@ body {
   width: 100%;
   height: 100%;
   transform: rotateZ(45deg);
+  transform: scale(1.5);
 }
 .shooting_star {
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 2px;
+  height: 5px;
   background: linear-gradient(-45deg, #00ff37, rgba(0, 0, 255, 0));
-  border-radius: 999px;
+  border-radius: 1200px;
   filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
   animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 }
@@ -247,8 +248,12 @@ body {
 
 .github{
   position: absolute;
-  top: calc(50vh);
-  left: calc(50vw);
+  top: 50vh;
+  left: 50vw;
+  text-decoration: none;
+  animation: anim-buttn 5s 1s cubic-bezier(.75,.17,.38,1.27);
+
+  
 }
 .github > img{
   position: relative;
@@ -256,14 +261,36 @@ body {
   width: 25vw;
   top: -12.5vw;
   left: -12.5vw;
-  opacity: 90%;
+  animation: pulse-buttn 1s 6s infinite cubic-bezier(.75,.17,.38,1.27);
 }
 
 .github > p{
   position: relative;
   z-index: 1;
   font-size: 5vw;
-  top: -17.5vw;
-  left: -5vw;
-  opacity: 90%;
+  top: -17vw;
+  left: -8.2vw;
+  
+  animation: pulse-buttn 1s 6s infinite cubic-bezier(.75,.17,.38,1.27);
+}
+
+@keyframes anim-buttn {
+  0%{
+    top: 150vh;
+  }
+  100%{
+    top: 50vh;
+  }
+}
+
+@keyframes pulse-buttn {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.01);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
