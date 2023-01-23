@@ -127,14 +127,13 @@ Zadatak2::after, Zadatak1::after, Rjes::after{
 }
 
 .task-container img{
-    width: 1;
-}
-.task-container img:hover{
-    width: 100%;
+    width: 80%;
+    
 }
 img-container::before, img-container::after {
     content: "\a";
     white-space: pre;
+    
 }
 
 .task-container a {
