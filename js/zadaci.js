@@ -12,6 +12,8 @@ $(function(){
   $(".z10").load("files/lv10/load.html"); 
   $(".z11").load("files/lv11/load.html");
   $(".z13").load("files/lv13/load.html");
+  $(".z14").load("files/lv14/load.html");
+  $(".z15").load("files/lv15/load.html");
 });
 
 containers = document.querySelectorAll(".task-container")
