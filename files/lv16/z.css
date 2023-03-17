@@ -1,0 +1,30 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+	color: #333;
+}
+
+.slikovnica {
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+	background-color: #f5f5f5;
+	border: 2px solid #333;
+}
+
+h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 24px;
+	margin: 30px 0;
+}
+
+i {
+	color: #f7c08a;
+	font-size: 48px;
+	margin: 0 10px;
+}
