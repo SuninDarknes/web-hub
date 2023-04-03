@@ -136,6 +136,11 @@ img-container::before, img-container::after {
     white-space: pre;
     
 }
+img{
+    height: 100%;
+    max-width: 25vw;
+    object-fit: contain;
+}
 
 .task-container a {
     color: inherit;
